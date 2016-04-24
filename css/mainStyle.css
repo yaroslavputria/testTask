@@ -38,7 +38,16 @@
   font-family: OpenSans-SemiboldItalic;
   src: url(../fonts/open-sans/OpenSans-SemiboldItalic.ttf);
 }
+.inl-b {
+  display: inline-block;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
 body {
+  min-width: 300px;
   margin: 0;
   padding: 0;
   background-color: #F7F9FA;
@@ -105,17 +114,20 @@ body header nav .wrap-nav .nav-left .logo a span, body header nav .wrap-nav .nav
 body header nav .wrap-nav .nav-right {
   float: right;
 }
-body main .wrap-main .wrap-header {
-  margin: 36px 0 5px 111px;
+body main .wrap-main {
+  padding-left: 79px;
 }
-body main .wrap-main .wrap-header h4 {
+body main .wrap-main .wrap-header {
+  margin: 36px 0 5px 32px;
+}
+body main .wrap-main .wrap-header a {
   margin: 0;
   font-family: OpenSans;
   font-size: 14px;
   color: #0077ff;
   line-height: 32px;
 }
-body main .wrap-main .wrap-header h4 span {
+body main .wrap-main .wrap-header a span {
   color: #000000;
 }
 body main .wrap-main .wrap-header h3 {
@@ -126,9 +138,11 @@ body main .wrap-main .wrap-header h3 {
   letter-spacing: 0.23px;
 }
 body main .wrap-user-cards {
-  margin-left: 79px;
+  float: left;
+  margin-top: 15px;
 }
 body main .wrap-user-cards .user-card {
+  text-align: left;
   padding: 22px 33px;
   margin-top: 14px;
   background: #ffffff;
@@ -145,6 +159,7 @@ body main .wrap-user-cards .user-card .avatar img.avatar-img {
   border-radius: 40px;
 }
 body main .wrap-user-cards .user-card .wrap-alluserinfo {
+  width: 655px;
   margin-left: 23px;
   display: inline-block;
 }
@@ -196,9 +211,201 @@ body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-orde
   font-size: 10px;
   color: #141414;
 }
-body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .test {
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns {
   float: right;
+  margin: 0;
 }
-body aside.aside-rigth {
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns div {
+  margin-right: 23px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns div span {
+  font-family: OpenSans-Semibold;
+  font-size: 10px;
+  color: #0077ff;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns div a {
+  font-family: OpenSans-Semibold;
+  font-size: 14px;
+  color: #0077ff;
+  letter-spacing: 0.5px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns .btn-hire {
+  border: 1px solid #0077ff;
+  background: #0077ff;
+  border-radius: 4px;
+  width: 85px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  color: #ffffff;
   float: right;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info {
+  padding-top: 5px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info p {
+  font-size: 15px;
+  display: inline-block;
+  width: 47%;
+  font-family: OpenSans;
+  font-size: 13px;
+  color: #141414;
+  line-height: 21px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info .copywrite-themes {
+  float: left;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info .copywrite-skills {
+  margin-left: 20px;
+}
+body main .aside-right {
+  margin: 15px 0 0 29px;
+}
+body main .aside-right .list-header {
+  font-family: OpenSans-Semibold;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 31px;
+  cursor: pointer;
+}
+body main .aside-right .list-header .list-icon {
+  margin-right: 11px;
+}
+body main .aside-right .list-header:hover {
+  color: #0077ff;
+}
+body main .aside-right ul.list-ul {
+  padding-left: 27px;
+  margin-top: 9px;
+}
+body main .aside-right ul.list-ul li {
+  list-style-type: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body main .aside-right ul.list-ul li a {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #0077ff;
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main .wrap-main .wrap-header {
+    text-align: left;
+  }
+  body main .wrap-user-cards {
+    float: none;
+  }
+  body main .aside-right {
+    clear: both;
+  }
+  body main .aside-right ul.list-ul li {
+    float: none;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  body header nav .wrap-nav {
+    text-align: center;
+  }
+  body header nav .wrap-nav .nav-left, body header nav .wrap-nav .nav-right {
+    display: block;
+  }
+  body header nav .wrap-nav .nav-left .btn-nav, body header nav .wrap-nav .nav-right .btn-nav {
+    margin-bottom: 20px;
+  }
+  body header nav .wrap-nav .nav-right {
+    float: none;
+  }
+  body header nav .wrap-nav .nav-right li.navlinks {
+    display: block;
+  }
+}
+@media only screen and (max-width: 950px) {
+  body header {
+    text-align: center;
+  }
+  body header nav .wrap-nav .nav-right {
+    float: none;
+  }
+  body header nav .wrap-nav .nav-right li.navlinks {
+    display: block;
+  }
+  body main .wrap-main {
+    padding: 0;
+  }
+  body main .wrap-main .wrap-header {
+    margin-left: 65px;
+  }
+  body main .wrap-user-cards {
+    text-align: center;
+  }
+  body main .wrap-user-cards .user-card {
+    text-align: left;
+    display: inline-block;
+  }
+  body main .aside-right {
+    margin-left: 65px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body main .wrap-user-cards .user-card {
+    text-align: center;
+    height: auto;
+    width: 90%;
+    padding: 20px 0;
+  }
+  body main .wrap-user-cards .user-card .avatar {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo {
+    text-align: left;
+    margin-left: 0;
+    width: 90%;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns {
+    float: none;
+    margin-top: 15px;
+    display: block;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-btns div {
+    text-align: left;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info p {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo .detailed-info .copywrite-skills {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body main .wrap-user-cards .user-card {
+    width: 95%;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  body main .wrap-user-cards .user-card {
+    width: 95%;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo {
+    width: 95%;
+  }
+  body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul li {
+    margin-bottom: 10px;
+  }
+
+  body main .aside-right ul.list-ul li {
+    padding-right: 10px;
+  }
 }
