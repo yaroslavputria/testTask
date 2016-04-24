@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: OpenSans-Bold; 
+  src: url(../fonts/open-sans/OpenSans-Bold.ttf); 
+}
+@font-face {
+	font-family: OpenSans-BoldItalic; 
+  src: url(../fonts/open-sans/OpenSans-BoldItalic.ttf); 
+}
+@font-face {
+	font-family: OpenSans-ExtraBold; 
+  src: url(../fonts/open-sans/OpenSans-ExtraBold.ttf); 
+}
+@font-face {
+	font-family: OpenSans-ExtraBoldItalic; 
+  src: url(../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf); 
+}
+@font-face {
+	font-family: OpenSans-Italic; 
+  src: url(../fonts/open-sans/OpenSans-Italic.ttf); 
+}
+@font-face {
+	font-family: OpenSans-Light; 
+  src: url(../fonts/open-sans/OpenSans-Light.ttf); 
+}
+@font-face {
+	font-family: OpenSans-LightItalic; 
+  src: url(../fonts/open-sans/OpenSans-LightItalic.ttf); 
+}
+@font-face {
+	font-family: OpenSans; 
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf); 
+}
+@font-face {
+	font-family: OpenSans-Semibold; 
+  src: url(../fonts/open-sans/OpenSans-Semibold.ttf); 
+}
+@font-face {
+	font-family: OpenSans-SemiboldItalic; 
+  src: url(../fonts/open-sans/OpenSans-SemiboldItalic.ttf); 
+}
+
+
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #F7F9FA;
+	header{
+		nav{
+			background-color: #ffffff;
+			padding: 0 30px;
+			.wrap-nav{
+				.nav-left, .nav-right{
+					margin: 0;
+					padding: 0;
+					display: inline-block;
+					//адаптувати
+					li{
+						display: inline-block;
+						list-style-type: none;
+					
+						text-align: center;
+						a{
+							text-decoration: none;
+							font-family: OpenSans-Semibold;
+							font-size: 16px;
+							letter-spacing:0.14px;
+							color: #1a2a33;
+							display: block;
+						}
+					}
+						.btn-nav{
+							border-radius: 5px;
+							width: 216px;
+							height: 40px;
+							margin-right: 16px;
+							a{
+								line-height: 40px;
+								color: #fff;
+							}
+						}
+						.btn-nav#writer{
+							background-color: #7ed321;
+						}
+						.btn-nav#client{
+							background-color: #0077ff;
+						}
+					li.navlinks{
+						height: 85px;	
+						line-height: 85px;//адаптувати
+						a{
+							padding: 0 17px;
+						}
+					}
+					.navlinks:hover{
+						background:#f0f1f2;
+						a{
+							color: #000000;
+						}
+					}
+					.logo{
+						a{
+							font-size: 18px;
+							font-family: OpenSans-Bold;
+							padding: 0 17px 0 0;
+							span{
+								margin-left: 14px;
+							}
+						}
+						
+					}
+				}
+				.nav-left{
+					//float: left;
+				}
+				.nav-right{
+					float: right;
+				}
+			}
+		}
+	}
+	
+	main{
+		.wrap-main{
+			.wrap-header{
+				margin: 36px 0 5px 111px;
+				h4{
+					margin: 0;
+					font-family: OpenSans;
+					font-size:14px;
+					color:#0077ff;
+					line-height:32px;
+					span{
+						color: #000000;
+					}
+				}
+				h3{
+					margin: 0;
+					font-family: OpenSans-Semibold;
+					font-size:26px;
+					color:#000000;
+					letter-spacing:0.23px;
+				}
+			}
+		}
+		.wrap-user-cards{
+			margin-left: 79px; 
+			.user-card{
+				padding: 22px 33px;
+				margin-top: 14px;
+				background:#ffffff;
+				border-radius:4px;
+				width:825px;
+				height:170px;
+				font-size: 0;
+				.avatar{
+					float: left;
+					display: inline-block;
+					img.avatar-img{
+						border-radius: 40px;
+					}
+				}
+				.wrap-alluserinfo{
+					margin-left: 23px;
+					display: inline-block;
+					.info-line{
+						padding-bottom: 14px;
+
+						border-bottom: 1px solid #dddddd;
+//width:333px;
+						ul{
+							margin: 0;
+							padding: 0;
+							li{
+								display: inline-block;
+								list-style-type: none;
+								font-size: 15px;
+								line-height: 15px;
+								margin-right: 28px;
+								color: #000000;
+							}
+							.user-name{
+								font-family: OpenSans-Bold;
+								img.country-img{
+
+								}
+								.last-online{
+									font-family: OpenSans;
+									font-size:10px;
+									color:#141414;
+								}
+							}
+							.user-rate{
+								font-family: OpenSans-Bold;
+								
+								.reviews-count{
+								font-family: OpenSans;
+								font-size:10px;
+								color:#141414;
+								}
+							}
+							.user-leng-level{
+								font-family: OpenSans-Bold;
+								
+								.user-leng{
+								font-family: OpenSans;
+								font-size:10px;
+								color:#141414;
+								}
+							}
+							.user-orders-count{
+								font-family: OpenSans-Bold;
+								
+								.user-orders-stage{
+								font-family: OpenSans;
+								font-size:10px;
+								color:#141414;
+								}
+							}
+							.test{
+								float: right;
+							}
+						}
+
+					}
+					.detailed-info{
+
+					}
+				}
+			}
+		}
+	}
+
+	aside.aside-rigth{
+		float: right;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+	
+	
+	// text-align: center;
+	// background-color: #F7F9FA;
+	// nav{
+	// 	// tmp widthwidth:1280px;
+	// 	height: 85px;
+	// 	padding: 0 30px;
+	// 	margin: 0;
+	// 	//margin: auto;
+	// 	background-color: #ffffff;
+	// 	.nav-left, .nav-right{
+	// 		float: left;
+	// 		li{
+	// 			height: 85px;
+	// 			float: left;
+	// 			list-style-type: none;
+	// 			a{
+	// 				padding: 31px 27px 32px 27px;
+	// 				font-family: OpenSans-Semibold;
+	// 				font-size:16px;
+	// 				color:#1a2a33;
+	// 				letter-spacing:0.14px;
+	// 				background: none;
+	// 				height: 100%;
+	// 				text-decoration: none;
+	// 			}
+	// 		}
+	// 		li:hover{
+	// 			a{
+	// 				color:#000000;
+	// 				background:#f0f1f2;
+	// 			}
+	// 		}
+	// 	}
+	// 	.nav-right{
+	// 		float: right !important;
+	// 		li{
+	// 			a{
+	// 				padding: 34px 17px 30px 17px;
+	// 			}
+	// 			margin-right: 16px;
+				
+	// 		}
+	// 			button{
+	// 				margin: 26px 16px 19px 0;
+	// 				width: 216px;
+	// 				height: 40px;
+	// 				font-size: 16px;
+	// 				font-family:OpenSans-Semibold;
+	// 				color:#ffffff;
+	// 				letter-spacing:0.14px;
+	// 				padding: 0;
+	// 			}
+	// 	}
+	// }
+

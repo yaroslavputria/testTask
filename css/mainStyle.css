@@ -1,0 +1,204 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: url(../fonts/open-sans/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url(../fonts/open-sans/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: OpenSans-ExtraBoldItalic;
+  src: url(../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url(../fonts/open-sans/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../fonts/open-sans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSans-LightItalic;
+  src: url(../fonts/open-sans/OpenSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Semibold;
+  src: url(../fonts/open-sans/OpenSans-Semibold.ttf);
+}
+@font-face {
+  font-family: OpenSans-SemiboldItalic;
+  src: url(../fonts/open-sans/OpenSans-SemiboldItalic.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F9FA;
+}
+body header nav {
+  background-color: #ffffff;
+  padding: 0 30px;
+}
+body header nav .wrap-nav .nav-left, body header nav .wrap-nav .nav-right {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+body header nav .wrap-nav .nav-left li, body header nav .wrap-nav .nav-right li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+body header nav .wrap-nav .nav-left li a, body header nav .wrap-nav .nav-right li a {
+  text-decoration: none;
+  font-family: OpenSans-Semibold;
+  font-size: 16px;
+  letter-spacing: 0.14px;
+  color: #1a2a33;
+  display: block;
+}
+body header nav .wrap-nav .nav-left .btn-nav, body header nav .wrap-nav .nav-right .btn-nav {
+  border-radius: 5px;
+  width: 216px;
+  height: 40px;
+  margin-right: 16px;
+}
+body header nav .wrap-nav .nav-left .btn-nav a, body header nav .wrap-nav .nav-right .btn-nav a {
+  line-height: 40px;
+  color: #fff;
+}
+body header nav .wrap-nav .nav-left .btn-nav#writer, body header nav .wrap-nav .nav-right .btn-nav#writer {
+  background-color: #7ed321;
+}
+body header nav .wrap-nav .nav-left .btn-nav#client, body header nav .wrap-nav .nav-right .btn-nav#client {
+  background-color: #0077ff;
+}
+body header nav .wrap-nav .nav-left li.navlinks, body header nav .wrap-nav .nav-right li.navlinks {
+  height: 85px;
+  line-height: 85px;
+}
+body header nav .wrap-nav .nav-left li.navlinks a, body header nav .wrap-nav .nav-right li.navlinks a {
+  padding: 0 17px;
+}
+body header nav .wrap-nav .nav-left .navlinks:hover, body header nav .wrap-nav .nav-right .navlinks:hover {
+  background: #f0f1f2;
+}
+body header nav .wrap-nav .nav-left .navlinks:hover a, body header nav .wrap-nav .nav-right .navlinks:hover a {
+  color: #000000;
+}
+body header nav .wrap-nav .nav-left .logo a, body header nav .wrap-nav .nav-right .logo a {
+  font-size: 18px;
+  font-family: OpenSans-Bold;
+  padding: 0 17px 0 0;
+}
+body header nav .wrap-nav .nav-left .logo a span, body header nav .wrap-nav .nav-right .logo a span {
+  margin-left: 14px;
+}
+body header nav .wrap-nav .nav-right {
+  float: right;
+}
+body main .wrap-main .wrap-header {
+  margin: 36px 0 5px 111px;
+}
+body main .wrap-main .wrap-header h4 {
+  margin: 0;
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #0077ff;
+  line-height: 32px;
+}
+body main .wrap-main .wrap-header h4 span {
+  color: #000000;
+}
+body main .wrap-main .wrap-header h3 {
+  margin: 0;
+  font-family: OpenSans-Semibold;
+  font-size: 26px;
+  color: #000000;
+  letter-spacing: 0.23px;
+}
+body main .wrap-user-cards {
+  margin-left: 79px;
+}
+body main .wrap-user-cards .user-card {
+  padding: 22px 33px;
+  margin-top: 14px;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 825px;
+  height: 170px;
+  font-size: 0;
+}
+body main .wrap-user-cards .user-card .avatar {
+  float: left;
+  display: inline-block;
+}
+body main .wrap-user-cards .user-card .avatar img.avatar-img {
+  border-radius: 40px;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo {
+  margin-left: 23px;
+  display: inline-block;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #dddddd;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul {
+  margin: 0;
+  padding: 0;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 15px;
+  line-height: 15px;
+  margin-right: 28px;
+  color: #000000;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-name {
+  font-family: OpenSans-Bold;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-name .last-online {
+  font-family: OpenSans;
+  font-size: 10px;
+  color: #141414;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-rate {
+  font-family: OpenSans-Bold;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-rate .reviews-count {
+  font-family: OpenSans;
+  font-size: 10px;
+  color: #141414;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-leng-level {
+  font-family: OpenSans-Bold;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-leng-level .user-leng {
+  font-family: OpenSans;
+  font-size: 10px;
+  color: #141414;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-orders-count {
+  font-family: OpenSans-Bold;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .user-orders-count .user-orders-stage {
+  font-family: OpenSans;
+  font-size: 10px;
+  color: #141414;
+}
+body main .wrap-user-cards .user-card .wrap-alluserinfo .info-line ul .test {
+  float: right;
+}
+body aside.aside-rigth {
+  float: right;
+}
